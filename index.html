@@ -36,7 +36,7 @@
   </div>
 
   <audio id="enter-sound" autoplay loop preload="auto">
-    <source src="https://mexi.lol/music.mp3" type="audio/mp3">
+    <source src="media/music.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
   
@@ -91,6 +91,7 @@
     // Event listener to remove the overlay on click
     enterOverlay.addEventListener('click', function() {
       enterOverlay.style.display = 'none';
+      audio.play();
     });
   </script>
 </body>
